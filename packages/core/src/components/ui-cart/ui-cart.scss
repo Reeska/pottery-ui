@@ -1,0 +1,25 @@
+:host {
+  display: block;
+}
+
+.items {
+  width: 100%;
+  border-collapse: collapse;
+
+  th, td {
+    border: 1px solid #999;
+    padding: 8px;
+
+    &.price {
+      text-align: center;
+    }
+
+    &.total {
+      font-weight: bold;
+    }
+  }
+
+  th {
+    background-color: #f7f6f6;
+  }
+}

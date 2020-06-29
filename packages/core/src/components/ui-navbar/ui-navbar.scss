@@ -1,0 +1,16 @@
+@import '../../styles/variables';
+
+:host {
+  display: block;
+  background-color: $secondary-light-color;
+  padding: 11px 0;
+  width: 100%;
+
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    max-width: $main-width;
+  }
+}

@@ -1,0 +1,15 @@
+@import './variables';
+
+@mixin desktop {
+  @media screen and (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin pottery-outline($outline-color: $primary-light-color) {
+  outline: none;
+
+  &:focus, &:hover {
+    background-color: $outline-color;
+  }
+}

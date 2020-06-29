@@ -1,0 +1,33 @@
+@import '../../styles/variables';
+
+:host {
+  display: flex;
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .book__cover {
+    height: 100px;
+  }
+
+  .book__panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 14px;
+
+    > * {
+      padding: 3px 0;
+    }
+
+    .book__title {
+      margin: 0;
+    }
+  }
+}
+
+:host(:nth-of-type(odd)) {
+  background: $primary-light-color;
+}

@@ -1,0 +1,28 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.cart-link {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 4px;
+  border: 0 none;
+  border-bottom: 2px solid $primary-color;
+  background-color: white;
+  border-radius: 5px;
+
+  @include pottery-outline;
+
+  .label {
+    padding-left: 9px;
+    padding-right: 9px;
+  }
+
+  .badge {
+    background-color: $primary-color;
+    padding: 3px 8px;
+    border-radius: 15px;
+    margin-left: 4px;
+  }
+}

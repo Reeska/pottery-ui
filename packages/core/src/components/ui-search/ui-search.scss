@@ -1,0 +1,24 @@
+@import '../../styles/mixins';
+@import '../../styles/mixins';
+
+:host {
+  display: flex;
+  width: 100%;
+  margin-right: 6px;
+
+  @include desktop {
+    width: 400px;
+  }
+
+  .input {
+    padding: 11px;
+    font-size: 1rem;
+    flex: 1;
+    border: 0 none;
+    border-bottom: 2px solid $primary-color;
+    background-color: white;
+    border-radius: 5px;
+
+    @include pottery-outline;
+  }
+}

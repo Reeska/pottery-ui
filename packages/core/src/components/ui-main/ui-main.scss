@@ -1,0 +1,7 @@
+@import '../../styles/variables';
+
+:host {
+  display: block;
+  margin: auto;
+  max-width: $main-width;
+}
