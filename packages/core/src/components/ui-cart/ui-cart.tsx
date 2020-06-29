@@ -17,7 +17,6 @@ export class UiCart {
   @Prop() totalWithPromo: number
 
   render() {
-    console.log('this.totalWithPromo', this.totalWithPromo)
     return (
       <Host>
         <h1>Cart</h1>

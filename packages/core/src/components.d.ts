@@ -5,23 +5,9 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
-import { Book, } from "./models";
-import { Book as Book1, } from "./models/book.type";
+import { Book } from "./models";
+import { Book as Book1 } from "./models/book.type";
 export namespace Components {
-    interface MyComponent {
-        /**
-          * The first name
-         */
-        "first": string;
-        /**
-          * The last name
-         */
-        "last": string;
-        /**
-          * The middle name
-         */
-        "middle": string;
-    }
     interface UiBook {
         "bookTitle": string;
         "cover": string;
@@ -53,12 +39,6 @@ export namespace Components {
     }
 }
 declare global {
-    interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
-    }
-    var HTMLMyComponentElement: {
-        prototype: HTMLMyComponentElement;
-        new (): HTMLMyComponentElement;
-    };
     interface HTMLUiBookElement extends Components.UiBook, HTMLStencilElement {
     }
     var HTMLUiBookElement: {
@@ -114,7 +94,6 @@ declare global {
         new (): HTMLUiSearchElement;
     };
     interface HTMLElementTagNameMap {
-        "my-component": HTMLMyComponentElement;
         "ui-book": HTMLUiBookElement;
         "ui-book-list": HTMLUiBookListElement;
         "ui-button": HTMLUiButtonElement;
@@ -127,20 +106,6 @@ declare global {
     }
 }
 declare namespace LocalJSX {
-    interface MyComponent {
-        /**
-          * The first name
-         */
-        "first"?: string;
-        /**
-          * The last name
-         */
-        "last"?: string;
-        /**
-          * The middle name
-         */
-        "middle"?: string;
-    }
     interface UiBook {
         "bookTitle"?: string;
         "cover"?: string;
@@ -175,7 +140,6 @@ declare namespace LocalJSX {
         "value"?: string;
     }
     interface IntrinsicElements {
-        "my-component": MyComponent;
         "ui-book": UiBook;
         "ui-book-list": UiBookList;
         "ui-button": UiButton;
@@ -191,7 +155,6 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
             "ui-book": LocalJSX.UiBook & JSXBase.HTMLAttributes<HTMLUiBookElement>;
             "ui-book-list": LocalJSX.UiBookList & JSXBase.HTMLAttributes<HTMLUiBookListElement>;
             "ui-button": LocalJSX.UiButton & JSXBase.HTMLAttributes<HTMLUiButtonElement>;
