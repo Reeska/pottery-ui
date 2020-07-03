@@ -1,14 +1,18 @@
 {
   "name": "@pottery-ui/react",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "This package is an pottery-ui adapter for React: the core components are wrapped into React components.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "source": "src/index.ts",
   "scripts": {
     "build": "rm -fr dist && tsc --project tsconfig.json"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Reeska/pottery-ui.git"
+  },
+  "author": "Reeska",
   "license": "ISC",
   "peerDependencies": {
     "@pottery-ui/core": "*"

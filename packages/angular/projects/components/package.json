@@ -1,6 +1,12 @@
 {
   "name": "@pottery-ui/angular",
-  "version": "0.0.1",
+  "description": "This package is an adapter for Angular: the core components are wrapped into Angular components.",
+  "version": "0.0.2",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Reeska/pottery-ui.git"
+  },
+  "author": "Reeska",
   "peerDependencies": {
     "@angular/common": "^9.1.11",
     "@angular/core": "^9.1.11"
