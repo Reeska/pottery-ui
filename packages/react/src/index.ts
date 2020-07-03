@@ -5,9 +5,8 @@ import { createReactComponent } from './react-component-lib';
 
 import { JSX } from '@pottery-ui/core';
 
-import { defineCustomElements, applyPolyfills } from '@pottery-ui/core/loader';
 
-applyPolyfills().then(() => defineCustomElements());
+
 export const UiBook = /*@__PURE__*/createReactComponent<JSX.UiBook, HTMLUiBookElement>('ui-book');
 export const UiBookList = /*@__PURE__*/createReactComponent<JSX.UiBookList, HTMLUiBookListElement>('ui-book-list');
 export const UiButton = /*@__PURE__*/createReactComponent<JSX.UiButton, HTMLUiButtonElement>('ui-button');
